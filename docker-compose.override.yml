@@ -1,0 +1,9 @@
+services:
+  api:
+    build:
+      target: dev
+    volumes:
+      - ./src:/app/src
+    environment:
+      DEBUG: "true"
+      LOG_LEVEL: "DEBUG"
