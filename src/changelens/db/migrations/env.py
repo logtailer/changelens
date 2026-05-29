@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 
 from changelens.config import settings
 from changelens.db.session import Base
+import changelens.models  # noqa: F401 — registers all ORM models with Base.metadata
 
 config = context.config
 
